@@ -1,0 +1,38 @@
+.SearchContainer {
+  background: #F9FBFC;
+  width: 100%;
+  position: relative;
+  display: flex;
+  box-shadow: 0 2px 4px -1px rgb(6 24 44 / 20%);
+  border-radius: 8px;
+}
+
+.SearchContainer  .TodoSearch {
+  background: #F9FBFC;
+  border-radius: 2px;
+  border: 2px solid #F9FBFC;
+  margin: 0 24px 0 10px;
+  height: 64px;
+  width: calc(100% - 62px);
+  font-size: 24px;
+  text-align: left;
+  font-weight: 400;
+  color: #425466;
+  
+  border-radius: 8px;
+}
+
+  .TodoSearch::placeholder {
+    color: #A5A5A5;
+    font-weight: 400;
+  }
+  
+  .TodoSearch:focus {
+    outline: none;
+  }
+
+  .SearchContainer .searchIcon{
+    padding-left: 10px;
+    width: 1.8em;
+    margin-left: 1em;
+  }
