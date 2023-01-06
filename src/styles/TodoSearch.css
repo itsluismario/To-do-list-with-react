@@ -9,16 +9,14 @@
 
 .SearchContainer  .TodoSearch {
   background: #F9FBFC;
-  border-radius: 2px;
   border: 2px solid #F9FBFC;
   margin: 0 24px 0 10px;
-  height: 64px;
+  height: 40px;
   width: calc(100% - 62px);
-  font-size: 24px;
+  font-size: 20px;
   text-align: left;
   font-weight: 400;
   color: #425466;
-  
   border-radius: 8px;
 }
 
@@ -33,6 +31,6 @@
 
   .SearchContainer .searchIcon{
     padding-left: 10px;
-    width: 1.8em;
+    width: 1.4em;
     margin-left: 1em;
   }

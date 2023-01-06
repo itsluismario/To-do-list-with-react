@@ -1,0 +1,23 @@
+.TodoAddTask {
+  background: #F9FBFC;
+  border: 2px solid #F9FBFC;
+  margin: 0px 0px 24px 0px;
+  height: 40px;
+  padding-left: 25px;
+  box-shadow: 0 2px 4px -1px rgb(6 24 44 / 20%);
+  font-size: 20px;
+  text-align: left;
+  font-weight: 400;
+  color: #425466;
+  border-radius: 8px;
+  width: 77%;
+}
+
+  .TodoAddTask::placeholder {
+    color: #A5A5A5;
+    font-weight: 400;
+  }
+  
+  .TodoAddTask:focus {
+    outline: none;
+  }
