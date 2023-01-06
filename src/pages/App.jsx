@@ -6,12 +6,12 @@ import '../styles/index.css';
 
 
 function App() {
-  
+
   return (
-    <div >
-      <Card /> 
-    </div>
-    
+    <div className="App">
+        <Card /> 
+        
+    </div>    
   );
 }
 

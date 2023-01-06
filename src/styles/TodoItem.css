@@ -1,53 +1,54 @@
 .TodoItem {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
   border-radius: 8px;
-  box-shadow: inset 0 1px 1px 0 hsl(0deg 0% 100% / 10%), 0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%);
+  box-shadow: inset 0 1px 1px 0 hsl(0deg 0% 100% / 10%),
+    0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%);
   color: #425466;
   box-shadow: 0 2px 4px -1px rgb(6 24 44 / 20%);
-  }
-  
-  .TodoItem-p {
-    margin: 0px 0px 0px 20px;
-    width: calc(100% - 120px);
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 400;
-  }
-  .TodoItem-p--complete {
-    text-decoration: line-through;
-  }
-  
-  .Icon {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 0px;
-    width: 48px;
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    left: 40px;
-    /* background-color: #CCC; */
-  }
+}
 
-  svg {
-    cursor: pointer;
-    margin-left: 30px;
-  }
+.TodoItem-p {
+  margin: 0px 0px 0px 20px;
+  width: calc(100% - 120px);
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
 
-  .closeIcon {
-    width: 20px;
-    height: 20px;
-    margin: 40px;
-    fill: rgb(6 24 44 / 60%);
-    transition: fill 0.2s ease-in-out;
-  }
-  .closeIcon:hover {
-    fill: rgb(6 24 44 / 100%);
-  }
+.Icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  width: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  left: 40px;
+  /* background-color: #CCC; */
+}
+
+svg {
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.closeIcon {
+  width: 20px;
+  height: 20px;
+  margin: 40px;
+  fill: rgb(6 24 44 / 60%);
+  transition: fill 0.2s ease-in-out;
+}
+.closeIcon:hover {
+  fill: rgb(6 24 44 / 100%);
+}
