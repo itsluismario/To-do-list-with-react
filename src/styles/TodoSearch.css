@@ -12,8 +12,8 @@
   border: 2px solid #F9FBFC;
   margin: 0 24px 0 10px;
   height: 40px;
-  width: calc(100% - 62px);
-  font-size: 20px;
+  width: calc(100%);
+  font-size: 15px;
   text-align: left;
   font-weight: 400;
   color: #425466;
