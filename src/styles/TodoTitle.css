@@ -1,5 +1,33 @@
+:root {
+    --gradient: linear-gradient(90deg, #ef008f, #6ec3f4, #7038ff, #ffba27);
+  
+  }
+
 .Title {
     color: rgba(	10, 37, 64, 1);
     font-size: 30px;
     text-align: center;
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    background-size: 300%;
+    transition: background-position 1s;
 }
+
+h1 {
+  margin: 60px 0px 0px 0px;
+}
+
+h3 {
+  color: rgba(	10, 37, 64, 1);
+  font-size: 15px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+  }

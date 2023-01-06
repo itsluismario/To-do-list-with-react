@@ -1,7 +1,7 @@
 .TodoAddTask {
   background: #F9FBFC;
   border: 2px solid #F9FBFC;
-  margin: 0px 0px 24px 0px;
+  margin: 0px 20px 24px 0px;
   height: 40px;
   padding-left: 25px;
   box-shadow: 0 2px 4px -1px rgb(6 24 44 / 20%);
@@ -10,7 +10,7 @@
   font-weight: 400;
   color: #425466;
   border-radius: 8px;
-  width: 64%;
+  width: 60%;
 }
 
   .TodoAddTask::placeholder {

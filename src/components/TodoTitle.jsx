@@ -4,7 +4,8 @@ import '../styles/TodoTitle.css';
 function TodoTitle () {
     return(
         <div className="Title">
-            <h1>Get This Shit Done</h1>
+            <h1>To-do List</h1>
+            <h3>by @itsluismario</h3>
         </div>        
     );
 }

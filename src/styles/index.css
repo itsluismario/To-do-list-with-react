@@ -1,6 +1,19 @@
+
 body {
   margin: 0;
   font-family: sohne-var, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #f6f9fc; */
+  /* background-color: #e6ebf1;  */
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: #333;
+
 }
+
