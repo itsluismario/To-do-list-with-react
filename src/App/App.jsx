@@ -1,7 +1,7 @@
 
 //import './App.css';
 import React from 'react';
-import { Card } from '../containers/Card';
+import { TODOs } from '../containers/TODOs.jsx';
 import '../styles/index.css';
 
 
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-        <Card />
+        <TODOs />
     </div>    
   );
 }
