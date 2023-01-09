@@ -7,21 +7,16 @@ import { ReactComponent as UnDone } from "../assets/icon_circle_.svg";
 
 function Task({ isDone }) {
   if (isDone) {
-    return <UnDone />;
+    return <Done />;
   }
-  return <Done />;
+  return <UnDone />;
 }
 
 function TodoItem(props){
-    const onComplete = () => {
-      alert('You already complete the to-do ' + props.text);
-    }
-    const onDelete = () => {
-      alert('You get rid of the to-do ' + props.text);
-    }
+
     return(
-        <li className="TodoItem">
-        <span onClick={onComplete}>
+        <li className="TodoItem noselect">
+        <span onClick={props.onComplete}>
           <Task  
             isDone={props.completed} 
           />
@@ -31,7 +26,7 @@ function TodoItem(props){
         </p>
         <Eliminate 
           className="closeIcon" 
-          onClick={onDelete}
+          onClick={props.onDelete}
         />
       </li>
     );

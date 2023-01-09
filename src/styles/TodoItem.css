@@ -46,10 +46,21 @@ svg {
 .closeIcon {
   width: 20px;
   height: 20px;
-  margin: 40px;
+  margin: 20px;
+  padding-bottom: 8px;
   fill: rgb(6 24 44 / 60%);
   transition: fill 0.2s ease-in-out;
 }
 .closeIcon:hover {
   fill: rgb(6 24 44 / 100%);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
