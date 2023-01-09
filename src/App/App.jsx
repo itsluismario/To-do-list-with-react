@@ -1,7 +1,7 @@
 
 //import './App.css';
 import React from 'react';
-import { TODOs } from '../containers/TODOs.jsx';
+import { TODOs } from '../containers/TODOs/TODOs.js';
 import '../styles/index.css';
 
 
