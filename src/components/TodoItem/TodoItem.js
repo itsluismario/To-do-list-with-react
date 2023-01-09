@@ -1,8 +1,8 @@
 import React from "react";
-import '../styles/TodoItem.css';
-import { ReactComponent as Eliminate } from "../assets/close.svg";
-import { ReactComponent as Done } from "../assets/icon_circle_check_.svg";
-import { ReactComponent as UnDone } from "../assets/icon_circle_.svg";
+import './TodoItem.css';
+import { ReactComponent as Eliminate } from "../../assets/close.svg";
+import { ReactComponent as Done } from "../../assets/icon_circle_check_.svg";
+import { ReactComponent as UnDone } from "../../assets/icon_circle_.svg";
 
 
 function Task({ isDone }) {

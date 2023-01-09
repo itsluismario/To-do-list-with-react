@@ -1,11 +1,11 @@
 import React from 'react';
-import { TodoCounter } from '../components/TodoCounter';
-import { CreateTodoButton } from '../components/CreateTodoButton';
-import { TodoSearch } from '../components/TodoSearch';
-import { TodoList } from '../components/TodoList';
-import { TodoItem } from '../components/TodoItem';
-import { TodoTitle } from '../components/TodoTitle';
-import { TodoAddTask } from '../components/TodoAddTask';
+import { TodoCounter } from '../components/TodoCounter/TodoCounter';
+import { CreateTodoButton } from '../components/CreateTodoButton/CreateTodoButton';
+import { TodoSearch } from '../components/TodoSearch/TodoSearch';
+import { TodoList } from '../components/TodoList/TodoList';
+import { TodoItem } from '../components/TodoItem/TodoItem';
+import { TodoTitle } from '../components/TodoTitle/TodoTitle';
+import { TodoAddTask } from '../components/TodoAddTask/TodoAddTask';
 
 function TODOsUI ({
     totalTodos,

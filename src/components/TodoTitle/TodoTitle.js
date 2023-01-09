@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/TodoTitle.css';
+import './TodoTitle.css';
 
 function TodoTitle () {
     return(
