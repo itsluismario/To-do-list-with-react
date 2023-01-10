@@ -16,8 +16,9 @@ function TODOsUI ({
     completeTodo,
     deleteTodo,
   }) {
-    return [
-        <div className='Header'>
+    return (
+        <div>
+        <div className='Container'>
             <TodoTitle />
             <TodoCounter 
                 total = {totalTodos}
@@ -29,8 +30,8 @@ function TODOsUI ({
                 searchValue = {searchValue}
                 setSearchValue = {setSearchValue}
             /> 
-        </div>,
-        <div className="CardContainer">
+        </div>
+        <div className="Container">
                       
             <TodoList>
                 {searchedTodos.map(todo => (
@@ -44,7 +45,8 @@ function TODOsUI ({
                 ))}
             </TodoList>
         </div>
-    ];
+        </div>
+    );
 }
 
 export { TODOsUI };

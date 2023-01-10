@@ -10,6 +10,7 @@
     0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%);
   color: #425466;
   box-shadow: 0 2px 4px -1px rgb(6 24 44 / 20%);
+  width: 100%;
 }
 
 .TodoItem-p {
