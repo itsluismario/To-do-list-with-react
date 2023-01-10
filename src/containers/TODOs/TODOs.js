@@ -3,16 +3,26 @@ import './TODOs.css';
 import { TODOsUI } from "./TODOsUI";
 
 
-const defaultTodos = [
-    {text: 'Cortar cebolla', completed: true},
-    {text: 'Tomar cursop de intro a react', completed: true},
-    {text: 'Jugar minecraft', completed: false},
-    {text: 'itsluismario', completed: false},
+// const defaultTodos = [
+//     {text: 'Cortar cebolla', completed: true},
+//     {text: 'Tomar cursop de intro a react', completed: true},
+//     {text: 'Jugar minecraft', completed: false},
+//     {text: 'itsluismario', completed: false},
   
-  ]
+//   ]
 
 function TODOs(){
-    const [todos, setTodos] = React.useState(defaultTodos);
+    const localStorageTodos = localStorage.getItem('TODOS_V1');
+    let parsedTodos;
+
+    if(!localStorageTodos) {
+        localStorage.setItem('TODOS_V1', JSON.stringify([]));
+        parsedTodos = [];
+    } else {
+        parsedTodos = JSON.parse(localStorageTodos);
+    }
+
+    const [todos, setTodos] = React.useState(parsedTodos);
     const [searchValue, setSearchValue] = React.useState('');
 
     const completedTodos = todos.filter(todo => !!todo.completed).length;
@@ -30,6 +40,12 @@ function TODOs(){
         })
     }
 
+    const saveTodos = (newTodos) => {
+        const stringifiedTodos = JSON.stringify(newTodos)
+        localStorage.setItem('TODOS_V1', stringifiedTodos);
+        setTodos(newTodos);
+    }
+
     const completeTodo = (text) => {
         const todoIndex = todos.findIndex(todo => todo.text === text);
         const newTodos = [...todos];
@@ -37,16 +53,15 @@ function TODOs(){
             newTodos[todoIndex].completed = true;
         } else {
             newTodos[todoIndex].completed = false;
-        }
-        
-        setTodos(newTodos);
+        }  
+        saveTodos(newTodos);
     }
 
     const deleteTodo = (text) => {
         const todoIndex = todos.findIndex(todo => todo.text === text);
         const newTodos = [...todos];
         newTodos.splice(todoIndex,1);
-        setTodos(newTodos);
+        saveTodos(newTodos);
     }
 
     return (
