@@ -8,6 +8,8 @@ import { TodoTitle } from '../../components/TodoTitle/TodoTitle';
 import { TodoAddTask } from '../../components/TodoAddTask/TodoAddTask';
 
 function TODOsUI ({
+    loading, 
+    error,
     totalTodos,
     completedTodos,
     searchValue,
@@ -34,6 +36,9 @@ function TODOsUI ({
         <div className="Container">
                       
             <TodoList>
+                {error && <p>Something is wrong</p>}
+                {loading && <p>It's loading</p>}
+                {(!loading && !!searchedTodos) && <p>Create your first TODO</p>}
                 {searchedTodos.map(todo => (
                 <TodoItem 
                     key={todo.text} 
