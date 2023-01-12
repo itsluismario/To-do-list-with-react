@@ -6,49 +6,44 @@ import { TodoList } from '../../components/TodoList/TodoList';
 import { TodoItem } from '../../components/TodoItem/TodoItem';
 import { TodoTitle } from '../../components/TodoTitle/TodoTitle';
 import { TodoAddTask } from '../../components/TodoAddTask/TodoAddTask';
+import { TodoContext } from '../../TodoConext';
 
-function TODOsUI ({
-    loading, 
-    error,
-    totalTodos,
-    completedTodos,
-    searchValue,
-    setSearchValue,
-    searchedTodos,
-    completeTodo,
-    deleteTodo,
-  }) {
+function TODOsUI () {
     return (
         <div>
         <div className='Container'>
             <TodoTitle />
-            <TodoCounter 
-                total = {totalTodos}
-                completed = {completedTodos}
-            /> 
+            <TodoCounter /> 
             <TodoAddTask />
             <CreateTodoButton />
-            <TodoSearch 
-                searchValue = {searchValue}
-                setSearchValue = {setSearchValue}
-            /> 
+            <TodoSearch /> 
         </div>
         <div className="Container">
-                      
-            <TodoList>
-                {error && <p>Something is wrong</p>}
-                {loading && <p>It's loading</p>}
-                {(!loading && !!searchedTodos) && <p>Create your first TODO</p>}
-                {searchedTodos.map(todo => (
-                <TodoItem 
-                    key={todo.text} 
-                    text={todo.text} 
-                    completed={todo.completed}
-                    onComplete = {() => completeTodo(todo.text)}
-                    onDelete = {() => deleteTodo(todo.text)}
-                />
-                ))}
-            </TodoList>
+        <TodoContext.Consumer>
+            {({
+                error, 
+                loading, 
+                searchedTodos, 
+                completeTodo, 
+                deleteTodo
+            }) => (
+                            <TodoList>
+                            {error && <p>Something is wrong</p>}
+                            {loading && <p>It's loading</p>}
+                            {(!loading && !!searchedTodos) && <p>Create your first TODO</p>}
+                            {searchedTodos.map(todo => (
+                            <TodoItem 
+                                key={todo.text} 
+                                text={todo.text} 
+                                completed={todo.completed}
+                                onComplete = {() => completeTodo(todo.text)}
+                                onDelete = {() => deleteTodo(todo.text)}
+                            />
+                            ))}
+                        </TodoList>
+            )}    
+        </TodoContext.Consumer>              
+
         </div>
         </div>
     );
