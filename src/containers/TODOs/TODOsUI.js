@@ -7,6 +7,7 @@ import { TodoItem } from '../../components/TodoItem/TodoItem';
 import { TodoTitle } from '../../components/TodoTitle/TodoTitle';
 import { TodoAddTask } from '../../components/TodoAddTask/TodoAddTask';
 import { TodoContext } from '../../TodoConext';
+import { Modal } from '../../Modal/Modal'
 
 function TODOsUI () {
     const {                
@@ -42,7 +43,9 @@ function TODOsUI () {
             ))}
         </TodoList>
   
-            
+        <Modal>
+            <p>Teletransport</p>
+        </Modal>
 
         </div>
         </div>
