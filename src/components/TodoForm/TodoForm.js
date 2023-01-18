@@ -1,5 +1,6 @@
 import React from "react";
 import { TodoContext } from "../../TodoConext";
+import './TodoForm.css';
 
 function TodoForm(){
     const [newTodoValue, setNewTodoValue] = React.useState('');
@@ -18,14 +19,16 @@ function TodoForm(){
     }
 
     return(
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="Group">
             <textarea
             value = {newTodoValue}
             onChange = {onChange}
             placeholder = "Add new task"
+            className="TodoAddTask"
             ></textarea>
             <div>
                 <button
+                className="CreateTodoButton"
                 type = "submit"
                 >
                     Create task

@@ -1,13 +1,11 @@
 import React from 'react';
 import { TodoCounter } from '../../components/TodoCounter/TodoCounter';
-import { CreateTodoButton } from '../../components/CreateTodoButton/CreateTodoButton';
+
 import { TodoSearch } from '../../components/TodoSearch/TodoSearch';
 import { TodoList } from '../../components/TodoList/TodoList';
 import { TodoItem } from '../../components/TodoItem/TodoItem';
 import { TodoTitle } from '../../components/TodoTitle/TodoTitle';
-import { TodoAddTask } from '../../components/TodoAddTask/TodoAddTask';
 import { TodoContext } from '../../TodoConext';
-import { Modal } from '../../Modal/Modal'
 import { TodoForm } from '../../components/TodoForm/TodoForm';
 
 function TODOsUI () {
@@ -23,17 +21,14 @@ function TODOsUI () {
         <div className='Container'>
             <TodoTitle />
             <TodoCounter /> 
-            <TodoAddTask />
             <TodoForm />
-            <CreateTodoButton />
             <TodoSearch /> 
         </div>
         <div className="Container">
 
         <TodoList>
-            {error && <p>Something is wrong</p>}
-            {loading && <p>It's loading</p>}
-            {(!loading && !!searchedTodos) && <p>Create your first TODO</p>}
+            {error && <p className='Effect'>Something is wrong</p>}
+            {loading && <p className='Effect'>It's loading</p>}
             {searchedTodos.map(todo => (
             <TodoItem 
                 key={todo.text} 
@@ -45,10 +40,6 @@ function TODOsUI () {
             ))}
         </TodoList>
   
-        <Modal>
-            <p>Teletransport</p>
-        </Modal>
-
         </div>
         </div>
     );
