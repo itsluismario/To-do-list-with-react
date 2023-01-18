@@ -39,7 +39,7 @@
   /* background-color: #CCC; */
 }
 
-svg {
+li svg {
   cursor: pointer;
   margin-left: 30px;
   padding-top: 8px;
