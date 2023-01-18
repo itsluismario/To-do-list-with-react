@@ -8,6 +8,7 @@ import { TodoTitle } from '../../components/TodoTitle/TodoTitle';
 import { TodoAddTask } from '../../components/TodoAddTask/TodoAddTask';
 import { TodoContext } from '../../TodoConext';
 import { Modal } from '../../Modal/Modal'
+import { TodoForm } from '../../components/TodoForm/TodoForm';
 
 function TODOsUI () {
     const {                
@@ -23,6 +24,7 @@ function TODOsUI () {
             <TodoTitle />
             <TodoCounter /> 
             <TodoAddTask />
+            <TodoForm />
             <CreateTodoButton />
             <TodoSearch /> 
         </div>
