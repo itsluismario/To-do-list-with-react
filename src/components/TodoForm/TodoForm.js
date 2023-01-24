@@ -20,12 +20,12 @@ function TodoForm(){
 
     return(
         <form onSubmit={onSubmit} className="Group">
-            <textarea
+            <input
             value = {newTodoValue}
             onChange = {onChange}
             placeholder = "Add new task"
             className="TodoAddTask"
-            ></textarea>
+            ></input>
             <div>
                 <button
                 className="CreateTodoButton"

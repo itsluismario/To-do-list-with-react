@@ -1,16 +1,17 @@
 .Group {
   display: flex;
   flex-direction: row;
+  margin-top: 15px;
 }
 
 .CreateTodoButton {
     width: auto;
     border: none;
-    margin: 0px 0px 24px 0px;
+    margin: 0px 0px 0px 10px;
     height: 60px;
     padding: 5px 8px 5px 8px;
     font-size: 15px;
-    text-align: left;
+    text-align: center;
     font-weight: 400;
     color: #F9FBFC;
     border-radius: 16.5px;
@@ -33,17 +34,19 @@
   
   @media (max-width: 831px) {
     .CreateTodoButton {
-      margin: 0px 0px 24px 0px;
+      margin: 0px 0px 0px 0px;
     }
   }
 
   .TodoAddTask {
     background: #F9FBFC;
     border: 2px solid #F9FBFC;
-    margin: 0px 7px 24px 0px;
+    margin: 0px 7px 0px 0px;
     height: 40px;
     padding-left: 25px;
-    padding-top: 15px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     box-shadow: 0 2px 4px -1px rgb(6 24 44 / 20%);
     font-size: 15px;
     text-align: left;
@@ -52,7 +55,7 @@
     border-radius: 8px;
     width: 60%;
     font-family: sohne-var, "Helvetica Neue", Arial, sans-serif;
-    
+    resize: none;
   }
   
     .TodoAddTask::placeholder {
