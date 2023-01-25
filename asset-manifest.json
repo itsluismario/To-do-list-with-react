@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-to-do-list/static/css/main.eca2e99a.css",
-    "main.js": "/react-to-do-list/static/js/main.c3214352.js",
+    "main.css": "/react-to-do-list/static/css/main.d3610db6.css",
+    "main.js": "/react-to-do-list/static/js/main.901999de.js",
     "static/media/icon_search_.svg": "/react-to-do-list/static/media/icon_search_.d6ba7c2c1a1e02ccadc67374f2788f3d.svg",
     "index.html": "/react-to-do-list/index.html",
-    "static/media/icon_circle_.svg": "/react-to-do-list/static/media/icon_circle_.9ecc6bc9ae72a409ce7ba279e793ad01.svg",
+    "static/media/icon_circle_.svg": "/react-to-do-list/static/media/icon_circle_.aaea55da4cb8ad57bb4204e0bf1b6712.svg",
     "static/media/icon_circle_check_.svg": "/react-to-do-list/static/media/icon_circle_check_.d14dba404c68d23c73af4f0be0a35b10.svg",
     "static/media/close.svg": "/react-to-do-list/static/media/close.63b9e66341bb1685901e6b6810e80392.svg",
-    "main.eca2e99a.css.map": "/react-to-do-list/static/css/main.eca2e99a.css.map",
-    "main.c3214352.js.map": "/react-to-do-list/static/js/main.c3214352.js.map"
+    "main.d3610db6.css.map": "/react-to-do-list/static/css/main.d3610db6.css.map",
+    "main.901999de.js.map": "/react-to-do-list/static/js/main.901999de.js.map"
   },
   "entrypoints": [
-    "static/css/main.eca2e99a.css",
-    "static/js/main.c3214352.js"
+    "static/css/main.d3610db6.css",
+    "static/js/main.901999de.js"
   ]
 }
