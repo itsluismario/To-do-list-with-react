@@ -16,6 +16,7 @@ function TodoForm(){
     const onSubmit = (event) => {
         event.preventDefault();
         addTodo(newTodoValue);
+        setNewTodoValue('');
     }
 
     return(

@@ -62,15 +62,17 @@ function TodoProvider(props) {
 
     const addTodo = (text) => {
         const newTodos = [...todos];
+        const id = Math.floor(Math.random() * 1000) + 1;
         newTodos.push({
             completed: false,
             text,
+            id: id
         });
         saveTodos(newTodos);
     }
 
-    const completeTodo = (text) => {
-        const todoIndex = todos.findIndex(todo => todo.text === text);
+    const completeTodo = (id) => {
+        const todoIndex = todos.findIndex(todo => todo.id === id);
         const newTodos = [...todos];
         if(newTodos[todoIndex].completed === false){
             newTodos[todoIndex].completed = true;
@@ -80,8 +82,8 @@ function TodoProvider(props) {
         saveTodos(newTodos);
     }
 
-    const deleteTodo = (text) => {
-        const todoIndex = todos.findIndex(todo => todo.text === text);
+    const deleteTodo = (id) => {
+        const todoIndex = todos.findIndex(todo => todo.id === id);
         const newTodos = [...todos];
         newTodos.splice(todoIndex,1);
         saveTodos(newTodos);
