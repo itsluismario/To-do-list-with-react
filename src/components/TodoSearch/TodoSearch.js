@@ -7,7 +7,6 @@ function TodoSearch () {
     const {searchValue, setSearchValue} = React.useContext(TodoContext);
     
     const onSearchValueChange = (event) => {
-        console.log(event.target.value);
         setSearchValue(event.target.value);
     }
     
@@ -16,7 +15,7 @@ function TodoSearch () {
     <img src={icon_search} alt={icon_search} className="searchIcon"/>
     <input 
         className="TodoSearch" 
-    placeholder="Search" 
+        placeholder="Search" 
         value={searchValue}
         onChange={onSearchValueChange}
     />

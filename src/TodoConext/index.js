@@ -9,7 +9,7 @@ function TodoProvider(props) {
         item: todos,
         saveItem: saveTodos,
         loading,
-        error
+        error,
     } = useLocalStorage('TODOS_V1', []); 
     const [searchValue, setSearchValue] = React.useState('');
 
@@ -41,6 +41,7 @@ function TodoProvider(props) {
                 const searchText = searchValue.toLowerCase();
                 return todoText.includes(searchText);
             }
+            return false;
         })
     }
 
@@ -55,6 +56,7 @@ function TodoProvider(props) {
                 const searchText = searchValue.toLowerCase();
                 return todoText.includes(searchText);
             }
+            return false;
         })
     }
 
@@ -90,9 +92,11 @@ function TodoProvider(props) {
         saveTodos(newTodos);
     }
     
-    const [AllStatus, setAllStatus] = React.useState(false);
-    const [ActiveStatus, setActiveStatus] = React.useState(true);
+    const [AllStatus, setAllStatus] = React.useState(true);
+    const [ActiveStatus, setActiveStatus] = React.useState(false);
     const [CompletedStatus, setCompletedStatus] = React.useState(false);
+    
+    
 
     const onChangeAll = () => {
         setAllStatus(true)

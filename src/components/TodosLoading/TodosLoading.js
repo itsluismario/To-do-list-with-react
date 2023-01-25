@@ -4,7 +4,7 @@ import ContentLoader from "react-content-loader"
 const TodosLoading = (props) => (
 <ContentLoader 
     speed={2}
-    width={350}
+    width={400}
     height={124}
     viewBox="0 0 476 124"
     backgroundColor="#f3f3f3"
